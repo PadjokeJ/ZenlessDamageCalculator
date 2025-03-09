@@ -46,8 +46,8 @@ def calculate(skillCombo):
     # vvvvvvvvvvvvv MATHS vvvvvvvvvvvvv
     
     totalAttack = (baseAtk * (1 + atkPercent) + flatAttack) * (1 + combatAttackPercent) + combatFlatAttack
-    totalCritRate = critRate + engineBaseCritRate
-    totalCritDamage = enginePassiveCritDamage + critDamage
+    totalCritRate = critRate + engineBaseCritRate + 0.05
+    totalCritDamage = enginePassiveCritDamage + critDamage + 0.50
     totalIcePercent = elementBonus + enginePassiveIcePercent
 
     damageMult = 1 + dmgPercent + totalIcePercent
